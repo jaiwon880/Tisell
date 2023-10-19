@@ -5,12 +5,12 @@ import { DefaultTheme, Provider as PaperProvider } from "react-native-paper";
 
 const Tab = createBottomTabNavigator();
 
-const UnderCostScreen = () => <></>;
-const ConcertScreen = () => <></>;
-const SportsScreen = () => <></>;
-const MusicalTheaterScreen = () => <></>;
-const MovieExhibitionScreen = () => <></>;
-const GoodsScreen = () => <></>;
+const UnderCostScreen: React.FC = () => <></>;
+const ConcertScreen: React.FC = () => <></>;
+const SportsScreen: React.FC = () => <></>;
+const MusicalTheaterScreen: React.FC = () => <></>;
+const MovieExhibitionScreen: React.FC = () => <></>;
+const GoodsScreen: React.FC = () => <></>;
 
 const theme = {
   ...DefaultTheme,
@@ -22,7 +22,7 @@ const theme = {
   },
 };
 
-export default function App() {
+const App: React.FC = () => {
   return (
     <PaperProvider theme={theme}>
       <NavigationContainer>
@@ -62,3 +62,5 @@ export default function App() {
     </PaperProvider>
   );
 }
+
+export default App;
