@@ -17,7 +17,7 @@ web-build/
 *.mobileprovision
 
 # IntelliJ project files
-.idea
+*.idea
 
 # Metro
 .metro-health-check*
